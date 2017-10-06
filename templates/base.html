@@ -10,7 +10,7 @@
     <div class="container">
       <div class="section">
         <div class="row">
-          <div class="col s9"><a href="{% url 'home' %}"><h3>HOME</h3></a></div>
+          <div class="col s9"><a href="{% url 'signup' %}"><h3>HOME</h3></a></div>
           <div class="col s3">
             <button data-target="feedback-modal" class="waves-effect waves-light btn modal-trigger">Sign Up</button>
           </div>
@@ -19,7 +19,7 @@
           <div id="signup-modal" class="modal">
             <div class="modal-content">
               <h4>We <3 feedback</h4>
-              <form action="{% url 'feedback' %}" method="post">{% csrf_token %}
+              <form action="{% url 'signup' %}" method="post">{% csrf_token %}
                 {{ form.as_p }}
                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                   <i class="mdi-content-send right"></i>
