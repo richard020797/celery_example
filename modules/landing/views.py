@@ -3,7 +3,7 @@ from modules.landing.forms import SignupForm
 
 
 class SignupView(FormView):
-    template_name = '/contact.html'
+    template_name = 'landing/signup.html'
     form_class = SignupForm
     success_url = '/'
 
