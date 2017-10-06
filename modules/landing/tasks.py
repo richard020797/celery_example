@@ -1,7 +1,7 @@
 from celery.decorators import task
 from celery.utils.log import get_task_logger
 from celery.task.schedules import crontab
-from utils import 
+from utils import send_signup_email
 
 from models import forms
 

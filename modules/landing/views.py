@@ -1,5 +1,5 @@
 from django.views.generic.edit import FormView
-from landing.forms import SignupForm
+from modules.landing.forms import SignupForm
 
 
 class SignupView(FormView):
