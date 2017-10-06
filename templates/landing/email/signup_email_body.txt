@@ -1,0 +1,6 @@
+{{message|linebreaks|safe}}
+
+
+Welcome to the Applicantion, your SignUp process is completed
+------
+Sent via signup form
