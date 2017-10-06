@@ -5,7 +5,7 @@ from modules.landing.forms import SignupForm
 class SignupView(FormView):
     template_name = 'landing/signup.html'
     form_class = SignupForm
-    success_url = '/'
+    success_url = '/signup/'
 
     def form_valid(self, form):
         form.send_email()
