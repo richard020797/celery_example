@@ -1,5 +1,5 @@
 from django import forms
-from modules.landing.tasks import send_signup_email_task
+from modules.landing.tasks import task_send_signup_email
 
 
 class SignupForm(forms.Form):
@@ -12,4 +12,4 @@ class SignupForm(forms.Form):
         # filled in; not super complicated/effective but it works
         if self.cleaned_data['honeypot']:
             return False
-        send_signup_email_task.delay(self.cleaned_data['email'], self.cleaned_data['message'])
+        task_send_signup_email.delay(self.cleaned_data['email'], self.cleaned_data['message'])
